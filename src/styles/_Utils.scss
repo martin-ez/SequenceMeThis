@@ -1,0 +1,25 @@
+%fixed-top-left
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+%absolute-top-left
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+%center-flex
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%shadow-1
+{
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.25);
+}

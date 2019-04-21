@@ -1,0 +1,27 @@
+{
+  "name": "seq-me-this",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "matter-js": "^0.14.2",
+    "pixi.js": "^4.8.7",
+    "vue": "^2.6.10",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/matter-js": "^0.10.2",
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-typescript": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
+    "sass": "^1.18.0",
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.4.3",
+    "vue-template-compiler": "^2.5.21"
+  }
+}

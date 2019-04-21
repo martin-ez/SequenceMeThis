@@ -1,0 +1,47 @@
+@import './styles/_Colors';
+@import './styles/_Utils';
+
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html
+{
+  overflow: hidden;
+  background-color: $bg-color;;
+}
+
+#app
+{
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section#Home, section#Session
+{
+  width: 100vw;
+  height: 100vh;
+  @extend %absolute-top-left;
+}
+
+#Session
+{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+
+  .Workspace
+  {
+    background-color: white;
+    z-index: 4;
+  }
+}
+
+@import './styles/Home';
+@import './styles/Tabs';
+@import './styles/SeqSelector';
+@import './styles/Sequencer';

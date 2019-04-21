@@ -1,0 +1,56 @@
+#SeqSelector
+{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+
+  h1
+  {
+    text-align: center;
+    font-size: 3rem;
+    margin: 5vh 0;
+  }
+
+  .SeqGallery
+  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 0 2rem;
+
+
+    .Thumbnail
+    {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      background-color: $bg-color;
+      position: relative;
+      overflow: hidden;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      transition: all 300ms ease;
+
+      h1
+      {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 1rem;
+        background-color: $red-color;
+      }
+
+      p
+      {
+        padding: 1rem;
+      }
+
+      &:hover
+      {
+        @extend %shadow-1;
+      }
+    }
+  }
+}
